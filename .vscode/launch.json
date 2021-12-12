@@ -10,9 +10,9 @@
             "type": "dart",
             "args": [
                 "--dart-define",
-                "SUPABASEURL = https://pjthyefaatrnyewzemju.supabase.co",
+                "SUPABASEURL=https://pjthyefaatrnyewzemju.supabase.co",
                 "--dart-define",
-                "SUPABASEKEY = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzOTIzMjYzNCwiZXhwIjoxOTU0ODA4NjM0fQ.SsbZEh4oTACljvy64EN9qq0ZlDAOWixRIM18O4sb4Xw",
+                "SUPABASEKEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzOTIzMjYzNCwiZXhwIjoxOTU0ODA4NjM0fQ.SsbZEh4oTACljvy64EN9qq0ZlDAOWixRIM18O4sb4Xw",
             ]
         },
         {
