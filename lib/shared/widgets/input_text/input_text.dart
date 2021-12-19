@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
 import 'package:meuapp/shared/theme/app_theme.dart';
 
 class InputText extends StatelessWidget {
@@ -9,13 +11,17 @@ class InputText extends StatelessWidget {
   final bool obscure;
   final void Function(String)? onChanged;
   final String? Function(String)? validator;
+  final List<TextInputFormatter>? inputFormatters;
+  final TextInputType? keyboardType;
   const InputText({
+    Key? key,
     required this.label,
     required this.hint,
-    Key? key,
     this.obscure = false,
     this.onChanged,
     this.validator,
+    this.inputFormatters,
+    this.keyboardType,
   }) : super(key: key);
 
   @override
@@ -28,6 +34,7 @@ class InputText extends StatelessWidget {
           height: 12,
         ),
         TextFormField(
+          inputFormatters: inputFormatters,
           obscureText: obscure,
           onChanged: onChanged,
           validator: (value) {
